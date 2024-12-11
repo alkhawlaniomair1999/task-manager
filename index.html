@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+        <main>
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Enter your task..." />
+                <select id="task-category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="date" id="task-date" />
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <div id="task-list" class="task-list"></div>
+        </main>
+        <footer>
+            <p>© 2024 Task Manager. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
